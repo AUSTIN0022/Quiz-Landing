@@ -119,13 +119,10 @@ const AboutSection = () => {
               <Download className="w-5 h-5" />
               <span>Download Syllabus</span>
             </button>
-        
-            
           </div>
         </div>
       </div>
     </div>
-  )
   );
 };
 
