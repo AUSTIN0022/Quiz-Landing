@@ -126,6 +126,7 @@ const AboutSection = () => {
         </div>
       </div>
     </div>
+  )
   );
 };
 
