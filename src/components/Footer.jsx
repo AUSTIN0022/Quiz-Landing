@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="py-8 px-4 bg-gray-100 border-t border-gray-200">
+    <footer className="py-8 px-4 bg-gradient-to-r from-slate-50 via-gray-50 to-blue-50 border-t-2 border-blue-200">
       <div className="max-w-4xl mx-auto text-center">
         {/* YSM Logo */}
         <div className="mb-4">
@@ -12,15 +12,15 @@ const Footer = () => {
         </div>
         
         {/* Contact Info */}
-        <p className="text-gray-700 text-lg mb-4">
+        <p className="text-gray-800 text-lg mb-4 font-medium">
           For more Info Call: +91 86240 93698
         </p>
         
         {/* Privacy Policy */}
-        <p className="text-gray-700">
+        <p className="text-gray-800">
           <a 
             href="https://ysminfosolution.com/privacy-policy" 
-            className="text-gray-700 hover:text-gray-900 transition-colors duration-300 underline"
+            className="text-blue-600 hover:text-blue-800 transition-colors duration-300 underline font-medium"
           >
             Privacy Policy
           </a>

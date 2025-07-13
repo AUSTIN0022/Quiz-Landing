@@ -40,16 +40,16 @@ const HeroBanner = () => {
 
   // Memoized timer blocks to avoid re-rendering
   const TimerBlock = ({ value, label }) => (
-    <div className="bg-white bg-opacity-80 backdrop-blur-sm shadow-lg border border-gray-200 p-4 rounded-lg text-center min-w-20">
-      <div className="text-gray-900 text-2xl md:text-3xl font-bold">
+    <div className="bg-white bg-opacity-90 backdrop-blur-sm shadow-xl border border-purple-200 p-4 rounded-xl text-center min-w-20 hover:shadow-2xl transition-all duration-300">
+      <div className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent text-2xl md:text-3xl font-bold">
         {formatTime(value)}
       </div>
-      <div className="text-gray-600 text-sm">{label}</div>
+      <div className="text-gray-700 text-sm font-medium">{label}</div>
     </div>
   );
 
   return (
-    <div className="relative py-8 px-4 text-center bg-gray-50 min-h-screen">
+    <div className="relative py-8 px-4 text-center bg-gradient-to-br from-white via-blue-50 to-purple-50 min-h-screen">
       <div className="max-w-4xl mx-auto">
         {/* YSM Logo */}
         <img 
@@ -66,12 +66,12 @@ const HeroBanner = () => {
         />
 
         {/* Competition Title */}
-        <h1 className="text-gray-900 text-2xl md:text-4xl font-bold mb-4">
+        <h1 className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-2xl md:text-4xl font-bold mb-4">
           Technical Quiz Competition
         </h1>
 
         {/* Date */}
-        <p className="text-gray-700 text-lg md:text-xl mb-8">
+        <p className="text-gray-800 text-lg md:text-xl mb-8 font-medium">
           Date: 31st August 2025
         </p>
 
@@ -85,7 +85,7 @@ const HeroBanner = () => {
 
         {/* Registration Button */}
         <button 
-          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 shadow-lg"
+          className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 text-white font-bold py-4 px-10 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
           onClick={() => navigate('/register')}
         >
           Registration Open

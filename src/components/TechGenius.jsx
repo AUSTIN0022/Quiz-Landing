@@ -12,35 +12,35 @@ const TechGenius = () => {
   const videoId = 'EuFGrGM51CU';
 
   return (
-    <div className="py-16 px-4 bg-white">
+    <div className="py-16 px-4 bg-gradient-to-r from-cyan-50 via-blue-50 to-indigo-50">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Left side - Text content */}
           <div className="space-y-6">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-              TECH GENIUS? <span className="text-blue-600">WIN BIG PRIZES NOW!</span>
+            <h2 className="text-4xl md:text-5xl font-bold">
+              <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">TECH GENIUS?</span> <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">WIN BIG PRIZES NOW!</span>
             </h2>
             
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="w-3 h-3 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mt-2 flex-shrink-0 shadow-md"></div>
                 <p className="text-gray-700 text-lg">Global exposure to showcase skills.</p>
               </div>
               
               <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="w-3 h-3 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full mt-2 flex-shrink-0 shadow-md"></div>
                 <p className="text-gray-700 text-lg">
                   Access to YSM's tech platform, downloads, manuals, and dedicated portals for learning.
                 </p>
               </div>
               
               <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="w-3 h-3 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full mt-2 flex-shrink-0 shadow-md"></div>
                 <p className="text-gray-700 text-lg">Skill enhancement and knowledge testing.</p>
               </div>
               
               <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="w-3 h-3 bg-gradient-to-r from-orange-400 to-red-500 rounded-full mt-2 flex-shrink-0 shadow-md"></div>
                 <p className="text-gray-700 text-lg">
                   Opportunities for cash rewards, certificates, and job invitations from industry leaders.
                 </p>
@@ -50,7 +50,7 @@ const TechGenius = () => {
 
           {/* Right side - Video */}
           <div className="relative">
-            <div className="relative bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl overflow-hidden aspect-video shadow-xl">
+            <div className="relative bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 rounded-2xl overflow-hidden aspect-video shadow-2xl border-4 border-white">
               {!isPlaying ? (
                 <>
                   {/* YouTube thumbnail */}
@@ -63,16 +63,16 @@ const TechGenius = () => {
                   <div className="absolute inset-0 flex items-center justify-center">
                     <button
                       onClick={handleVideoPlay}
-                      className="bg-white bg-opacity-95 hover:bg-opacity-100 rounded-full p-6 transition-all duration-300 transform hover:scale-110 shadow-2xl"
+                      className="bg-gradient-to-r from-white to-blue-50 bg-opacity-95 hover:bg-opacity-100 rounded-full p-6 transition-all duration-300 transform hover:scale-110 shadow-2xl border-2 border-blue-200"
                     >
-                      <Play className="w-12 h-12 text-blue-600 ml-1" />
+                      <Play className="w-12 h-12 text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text ml-1" />
                     </button>
                   </div>
                   <div className="absolute top-4 left-4 text-white font-bold text-xl">
                     YSM
                   </div>
                   <div className="absolute bottom-4 left-4 right-4">
-                    <div className="bg-white bg-opacity-25 backdrop-blur-sm rounded-lg p-4 border border-white border-opacity-20">
+                    <div className="bg-gradient-to-r from-white to-blue-50 bg-opacity-30 backdrop-blur-sm rounded-lg p-4 border border-white border-opacity-30">
                       <p className="text-white text-sm">
                         Learn more about QuizBuzz and the opportunities it provides
                       </p>
