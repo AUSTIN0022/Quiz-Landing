@@ -73,19 +73,19 @@ const PrizesSection = () => {
   ];
 
   return (
-    <div className="py-16 px-4 bg-gradient-to-br from-yellow-50 via-orange-50 to-red-50">
+    <div className="py-16 px-4 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">CONTEST</span> <span className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">PRIZES</span>
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">CONTEST</span> <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">PRIZES</span>
           </h2>
         </div>
 
         {/* Prizes Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {prizes.map((prize, index) => (
-            <div key={index} className="bg-white rounded-2xl p-6 border-2 border-yellow-200 hover:border-green-400 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">
+            <div key={index} className="bg-white rounded-2xl p-6 border-2 border-blue-200 hover:border-purple-400 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">
               <div className="text-center mb-6">
                 <div className={`inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r ${prize.gradient} rounded-full mb-4 shadow-md`}>
                   {prize.icon}
@@ -100,7 +100,7 @@ const PrizesSection = () => {
               <ul className="space-y-2 text-gray-700">
                 {prize.benefits.map((benefit, benefitIndex) => (
                   <li key={benefitIndex} className="flex items-start space-x-2">
-                    <span className="text-green-500 mt-1 text-lg">•</span>
+                    <span className="text-purple-500 mt-1 text-lg">•</span>
                     <span className="text-sm">{benefit}</span>
                   </li>
                 ))}
@@ -110,14 +110,15 @@ const PrizesSection = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center bg-white rounded-2xl p-8 border-2 border-green-200 shadow-xl hover:shadow-2xl transition-all duration-300">
+        <div className="text-center bg-white rounded-2xl p-8 border-2 border-purple-200 shadow-xl hover:shadow-2xl transition-all duration-300">
           <h3 className="text-3xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-2">
+          <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
             HURRY UP!
           </h3>
           <p className="text-2xl mb-6">
-            <span className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent font-bold">BE FIRST</span> <span className="text-gray-800">TO JOIN THE CONTEST</span>
+            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent font-bold">BE FIRST</span> <span className="text-gray-800">TO JOIN THE CONTEST</span>
           </p>
-          <button className="bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 hover:from-green-600 hover:via-emerald-600 hover:to-teal-600 text-white font-bold py-4 px-10 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+          <button className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-bold py-4 px-10 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             onClick={() => navigate('/register')}
           >
             Registration Open
